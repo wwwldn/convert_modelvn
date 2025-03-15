@@ -1,0 +1,46 @@
+# Ignore file hệ thống
+.DS_Store
+Thumbs.db
+
+# Ignore file Excel nhập/xuất
+*.xlsx
+*.xls
+*.csv
+
+# Ignore file log
+*.log
+
+# Ignore thư mục build của PyInstaller
+dist/
+build/
+__pycache__/
+
+# Ignore file tạm của Python
+*.pyc
+*.pyo
+*.~ 
+
+# Ignore file cấu hình IDE
+.vscode/
+.idea/
+
+# Ignore file tạm của Flask hoặc Tkinter
+uploads/
+*.tmp
+
+# Ignore file chạy trên Windows hoặc Mac
+*.bak
+*.swp
+
+# Ignore file thực thi
+*.exe
+*.dll
+*.out
+*.class
+*.o
+
+# Ignore các thư viện cài đặt
+env/
+venv/
+*.egg-info/
+
