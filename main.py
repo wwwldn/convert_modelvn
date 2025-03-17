@@ -1,8 +1,13 @@
 import os
+import sys
 import pandas as pd
 
-# Đường dẫn động cho các file
-current_dir = os.path.dirname(__file__) 
+# Xác định thư mục làm việc hiện tại (khi chạy dưới dạng .exe)
+if getattr(sys, 'frozen', False):
+    current_dir = os.path.dirname(sys.executable)  # Khi chạy dưới dạng .exe
+else:
+    current_dir = os.path.dirname(__file__)  # Khi chạy dưới dạng .py
+
 file_import = os.path.join(current_dir, 'Import_Excel_DonHangBan.xlsx')
 file_data = os.path.join(current_dir, 'Data.xlsx')
 
@@ -67,3 +72,4 @@ if count_not_found > 0:
         print(log)
 
 print(f"\n✅ File đã được xử lý và lưu thành '{output_file}'")
+input("\nNhấn Enter để thoát...")

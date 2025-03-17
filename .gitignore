@@ -3,9 +3,11 @@
 Thumbs.db
 
 # Ignore file Excel nhập/xuất
-*.xlsx
-*.xls
-*.csv
+#*.xlsx
+#*.xls
+#*.csv
+Import_Converted.xlsx
+
 
 # Ignore file log
 *.log
