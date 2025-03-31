@@ -1,2 +1,5 @@
 #Build file .exe
-pyinstaller --noconfirm --clean --onefile --console --icon "icon.ico" main.py
+del main.spec
+
+pyinstaller --noconfirm --clean --onefile --console --icon "icon.ico" ConvertDHB_ModelVN.py
+pyinstaller --noconfirm --clean --onefile --console --icon "icon.ico" ConvertDHM_ModelVN.py
